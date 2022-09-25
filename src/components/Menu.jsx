@@ -17,7 +17,7 @@ import { MdOutlinedFlag } from "react-icons/md";
 import { BiHelpCircle } from "react-icons/bi";
 // import { VscColorMode } from "react-icons/vsc";
 import { MdOutlineLightMode } from "react-icons/md";
-// import { MdLightMode } from "react-icons/md";
+import { MdLightMode } from "react-icons/md";
 import { RiFeedbackLine } from "react-icons/ri";
 import { MdCopyright } from "react-icons/md";
 import { IoPersonOutline } from "react-icons/io5";
@@ -26,8 +26,8 @@ import { IoPersonOutline } from "react-icons/io5";
 
 const Container=styled.div`
     flex:1.3;
-    background-color: #202020;
-    color:white;
+    background-color: ${({theme})=> theme.bgLighter};
+    color: ${({theme})=> theme.text};
     height: 117vh;
     margin: 0px;
     font-family: Arial;
@@ -65,12 +65,12 @@ const Item=styled.div`
     height: 29px;
 `;
 const Hr=styled.hr`
-    border: 1px solid #373737;
+    border: 1px solid ${({theme})=> theme.soft};
     margin 8px 0px;
 `;
 const Copyright=styled.div`
     margin-top: 24px;
-    color: #c4c3c0;
+    color: ${({theme})=> theme.textSoft};
     font-size: 14px;
 `;
 const Signin=styled.div`
@@ -96,7 +96,7 @@ const Button=styled.button`
     cursor: pointer;
 `
 
-const Menu = () => {
+const Menu = ({darkMode,setDarkMode}) => {
   return (
     <Container>
         <Wrapper>
@@ -176,14 +176,9 @@ const Menu = () => {
                 <RiFeedbackLine/>
                 Send feedback
             </Item>
-            <Item>
-                <MdOutlineLightMode/>
-                Lightmode
+            <Item onClick={() => setDarkMode(!darkMode)}>
+                {darkMode ? <Item> <MdOutlineLightMode/> <Item>LightMode</Item> </Item> : <Item><MdLightMode/> <Item>DarkMode</Item> </Item>}
             </Item>
-            {/* <Item>
-                <MdLightMode/>
-                Darkmode
-            </Item> */}
             <Hr/>
             <Copyright><MdCopyright/> 2022 Yousra</Copyright>
              
