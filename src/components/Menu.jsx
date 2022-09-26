@@ -22,8 +22,6 @@ import { RiFeedbackLine } from "react-icons/ri";
 import { MdCopyright } from "react-icons/md";
 import { IoPersonOutline } from "react-icons/io5";
 
-
-
 const Container=styled.div`
     flex:1.3;
     background-color: ${({theme})=> theme.bgLighter};
@@ -94,6 +92,15 @@ const Button=styled.button`
     color: #3ea6ff;
     border-radius:3px;
     cursor: pointer;
+    font-weight:bold;
+    font-size:17px;
+`;
+const Title=styled.h2`
+    font-size: 14px;
+    font-weight: 500;
+    color: #aaaaaa;
+    margin-bottom:11px;
+    margin-top:25px;
 `
 
 const Menu = ({darkMode,setDarkMode}) => {
@@ -147,6 +154,7 @@ const Menu = ({darkMode,setDarkMode}) => {
                 Liked videos
             </Item>
             <Hr/>
+            <Title>EXPLORE</Title>
             <Item>
                 <IoGameControllerOutline/>
                 Gaming
