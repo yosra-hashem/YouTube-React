@@ -21,6 +21,7 @@ import { MdLightMode } from "react-icons/md";
 import { RiFeedbackLine } from "react-icons/ri";
 import { MdCopyright } from "react-icons/md";
 import { IoPersonOutline } from "react-icons/io5";
+import {Link} from 'react-router-dom'
 
 const Container=styled.div`
     flex:1.3;
@@ -107,10 +108,12 @@ const Menu = ({darkMode,setDarkMode}) => {
   return (
     <Container>
         <Wrapper>
+            <Link to="/" style={{textDecoration:"none"}}>
             <Logo>
                 <Img src={logo}/>
                 <Text>YouTube</Text>
             </Logo>
+            </Link>
             <Item>
                 <AiFillHome/>
                 Home
