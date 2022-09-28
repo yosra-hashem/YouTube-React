@@ -142,8 +142,9 @@ const Menu = ({darkMode,setDarkMode}) => {
             <Signin>
                 Sign in to like videos,<br/>
                 comment and subscribe.
+                <Link to="signin" style={{textDecoration:"none"}}>
                 <Button><IoPersonOutline/>SIGN IN</Button>
-                
+                </Link>
             </Signin>
             
             <Hr/>

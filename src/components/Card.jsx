@@ -13,7 +13,7 @@ const Image=styled.img`
     width: 100%;
     height:${(props)=>props.type === "sm" ? "100px" : "202px"};
     background-color:#999;
-    flex:0.8;
+    flex:0.6;
 `;
 const Details=styled.div`
     display: flex;

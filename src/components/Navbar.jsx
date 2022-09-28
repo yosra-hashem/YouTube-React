@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import { IoPersonOutline } from "react-icons/io5";
+import {Link} from 'react-router-dom'
 
 const Container=styled.div`
   position: sticky;
@@ -61,7 +62,9 @@ const Navbar = () => {
     <Container>
       <Wrapper>
           <Input placeholder="Search" />
-        <Button><IoPersonOutline/>SIGN IN</Button>
+          <Link to="signin" style={{textDecoration:"none"}}>
+            <Button><IoPersonOutline/>SIGN IN</Button>
+          </Link>
       </Wrapper>
     </Container>
     
