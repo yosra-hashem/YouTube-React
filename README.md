@@ -1,13 +1,9 @@
 In the project directory, you can run:
 ### `npm start`
 
-YouTube React App using Styled Components, React Props and React Routers 
+-- YouTube React App using Styled Components, React Props and React Routers 
 
-It contains:
-Home Page
-Video Page
-Signin Page
-DarkMode and LightMode
+It contains: Home Page,Video Page, Signin Page and "DarkMode and LightMode"
 
 ![1](https://user-images.githubusercontent.com/59370116/192806540-9b304d80-e5a1-44d8-8539-b387434a2cac.png)
 ![2](https://user-images.githubusercontent.com/59370116/192806552-3d3cb8b1-84a8-4377-8660-cdb67a713d1f.png)
