@@ -5,6 +5,7 @@ import { BiDislike } from "react-icons/bi";
 import { BiShare } from "react-icons/bi";
 import { HiDownload } from "react-icons/hi";
 import { TbPlaylistAdd } from "react-icons/tb";
+import NewComment from '../components/NewComment';
 
 
 const Container = styled.div`
@@ -66,6 +67,7 @@ const Image = styled.img`
   width:50px;
   height:50px;
   border-radius:50%;
+  cursor:pointer;
 `;
 const ChannelDetails = styled.div`
   display:flex;
@@ -75,6 +77,7 @@ const ChannelDetails = styled.div`
 `;
 const ChannelName = styled.span`
   font-weight: 500;
+  cursor:pointer;
 `;
 const Subscribers = styled.span`
   margin-top:5px;
@@ -96,6 +99,7 @@ const Subscribe = styled.button`
   width: 115px;
   height:40px;
   margin-top:11px;
+  cursor:pointer;
 `;
 
 const Recommendations = styled.div`
@@ -143,6 +147,8 @@ const Video = () => {
           </ChannelInfo>
           <Subscribe>SUBSCRIBE</Subscribe>
         </Channel>
+        <Hr/>
+        <NewComment/>
       </Content>
       <Recommendations>
         Recommendations
