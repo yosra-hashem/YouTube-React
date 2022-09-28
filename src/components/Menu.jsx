@@ -60,8 +60,11 @@ const Item=styled.div`
     align-items: center;
     gap: 20px;
     cursor: pointer;
-    padding: 8px 0px;
+    padding: 8px 5px;
     height: 29px;
+    &:hover{
+        background-color:${({theme}) => theme.soft}
+    }
 `;
 const Hr=styled.hr`
     border: 1px solid ${({theme})=> theme.soft};

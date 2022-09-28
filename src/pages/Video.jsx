@@ -6,7 +6,7 @@ import { BiShare } from "react-icons/bi";
 import { HiDownload } from "react-icons/hi";
 import { TbPlaylistAdd } from "react-icons/tb";
 import NewComment from '../components/NewComment';
-
+import Card from '../components/Card';
 
 const Container = styled.div`
   display: flex;
@@ -151,7 +151,26 @@ const Video = () => {
         <NewComment/>
       </Content>
       <Recommendations>
-        Recommendations
+        <Card type="sm"/>
+        <Card type="sm"/>
+        <Card type="sm"/>
+        <Card type="sm"/>
+        <Card type="sm"/>
+        <Card type="sm"/>
+        <Card type="sm"/>
+        <Card type="sm"/>
+        <Card type="sm"/>
+        <Card type="sm"/>
+        <Card type="sm"/>
+        <Card type="sm"/>
+        <Card type="sm"/>
+        <Card type="sm"/>
+        <Card type="sm"/>
+        <Card type="sm"/>
+        <Card type="sm"/>
+        <Card type="sm"/>
+        <Card type="sm"/>
+        <Card type="sm"/>
       </Recommendations>
     </Container>
   )
